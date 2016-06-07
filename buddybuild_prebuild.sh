@@ -3,9 +3,9 @@
 cd /Users/buddybuild/workspace
 
 if [ -z ${PLATFORM+x} ]; then
-  echo '=== Detected Environmental Variable PLATFORM is set : $PLATFORM'
-  cordova build $PLATFORM
+  echo '=== Detected environmental variable PLATFORM is set: $PLATFORM'
+  cordova prepare $PLATFORM
 else
-  echo '=== Can Not Detected Environmental Variable PLATFORM. ionic prepare both ios and android. PLATFORM: $PLATFORM'
-  cordova build android ios
+  echo '=== Could not detect environmental variable PLATFORM. cordova prepare both ios and android. PLATFORM: $PLATFORM'
+  cordova prepare android ios
 fi
