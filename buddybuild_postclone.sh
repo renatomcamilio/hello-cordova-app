@@ -16,18 +16,12 @@ cordova requirements
 echo '=== Start to run : cordova add platforms'
 cordova platform add android ios
 
-echo '=== Start to run : cordova prepare platforms'
-cordova prepare android ios
-
 echo '=== Start to run : cp buddybuild_prebuild to ios platform'
 cp ./buddybuild_prebuild.sh ./platforms/ios
 echo '=== Start to run : cp buddybuild_prebuild to android platform'
 cp ./buddybuild_prebuild.sh ./platforms/android
 echo '=== Start to run : cp ./build_extra.gradle to android platform'
 cp ./build-extras.gradle ./platforms/android
-
-echo '=== Start to run : cordova compile platforms'
-cordova compile android ios
 
 echo '=== Start to run : env'
 env
